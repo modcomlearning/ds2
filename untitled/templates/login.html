@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+        <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+<h1 class="jumbotron">Login</h1>
+
+<section class="row">
+    <div class="col-md-3">
+
+    </div>
+
+    <div class="col-md-6">
+        <form action="/" method="post">
+            <input type="text" name="firstname" placeholder="Your first name" class="form-control"
+            required>
+            <br>
+            <b class="text-danger">{{msg1}}</b>
+            <br>
+
+             <input type="password" name="password" placeholder="Your password" class="form-control" required>
+            <br>
+            <b class="text-danger">{{msg3}}</b>
+            <br><br>
+             <input type="submit" value="Login" class="btn btn-dark">
+            <br>
+        </form>
+        <br>
+        <b class="text-success">{{msg}}</b>
+    </div>
+
+    <div class="col-md-3">
+
+    </div>
+</section>
+<b> Don't Have an Account?</b> <a href="/register">Register Here</a>
+</body>
+</html>
