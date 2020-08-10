@@ -57,7 +57,13 @@ print(subset.groupby(['Rank'])['SleepTime'].mean())
 
 print(subset.groupby(['Rank','Gender'])['SleepTime'].mean())
 
-print(subset.groupby(['Rank','Gender'])['SleepTime'].mean())
+print(subset.groupby(['Rank','Gender'])['Reading'].mean())
+
+print(subset.groupby(['Rank','Gender'])['Writing'].mean())
+
+
+# plots
+
 
 
 
