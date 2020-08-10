@@ -70,8 +70,15 @@ import matplotlib.pyplot as plt
 # it returns tuple
 x, ax = plt.subplots()
 ax.scatter(subset['Reading'], subset['Writing'], s=30, color='red')
+ax.set_title('Reading vs Writing')
+ax.set_xlabel('Reading Marks(100%)')
+ax.set_ylabel('Writing Marks(100%)')
 #plt.show()
 plt.savefig('plot1.png')
+
+
+
+
 
 
 
