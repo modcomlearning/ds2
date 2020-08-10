@@ -1,6 +1,8 @@
 
 import pandas
 import matplotlib
+# get this code here
+# https://github.com/modcomlearning/ds2/blob/master/DataScienceProject/part1/DSLesson2.py
 
 df = pandas.read_csv("https://modcom.co.ke/data/datasets/school.csv")
 # df includes rows and colmns
@@ -36,19 +38,26 @@ print(subset.isnull().sum())
 # replace Gender from 0, 1, 2 to Male and Female
 subset['Rank'].replace({1:'Freshman', 2:'Sophomore',3:'Junior',4:'Senior', 5:'Missing'}, inplace=True)
 subset['Gender'].replace({0:'Male', 1:'Female',2:'Missing'}, inplace=True)
+
 print(subset.describe()) # basic stats, only works with
 print(subset.corr())
 
+
+
 # grouping
-print(subset.groupby(['Gender','Rank'])['Math'].mean())
+print(subset.groupby(['Gender'])['Math'].mean())
 # pick from here
+print(subset.groupby(['Rank'])['Math'].mean())
 
+print(subset.groupby(['Rank'])['Reading'].mean())
 
+print(subset.groupby(['Rank'])['Writing'].mean())
 
+print(subset.groupby(['Rank'])['SleepTime'].mean())
 
+print(subset.groupby(['Rank','Gender'])['SleepTime'].mean())
 
-
-
+print(subset.groupby(['Rank','Gender'])['SleepTime'].mean())
 
 
 
