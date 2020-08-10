@@ -15,7 +15,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1elKwSn6c93rdEQdGygfaEU08wn" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -26,9 +26,16 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
-  <component name="RunManager" selected="Python.Lesson1b">
-    <configuration name="Lesson1" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.Lesson8b">
+    <configuration name="Lesson7Tasks" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="DSModcomJuly" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -40,7 +47,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Lesson1.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Lesson7Tasks.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -49,7 +56,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Lesson1b" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="Lesson7d" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="DSModcomJuly" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -61,7 +68,70 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Lesson1b.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Lesson7d.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Lesson7e" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="DSModcomJuly" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Lesson7e.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Lesson8a" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="DSModcomJuly" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Lesson8a.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Lesson8b" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="DSModcomJuly" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Lesson8b.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -72,8 +142,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.Lesson1b" />
-        <item itemvalue="Python.Lesson1" />
+        <item itemvalue="Python.Lesson8b" />
+        <item itemvalue="Python.Lesson8a" />
+        <item itemvalue="Python.Lesson7Tasks" />
+        <item itemvalue="Python.Lesson7e" />
+        <item itemvalue="Python.Lesson7d" />
       </list>
     </recent_temporary>
   </component>
@@ -88,28 +161,93 @@
       <option name="presentableId" value="Default" />
       <updated>1594890977781</updated>
     </task>
+    <task id="LOCAL-00001" summary="Third">
+      <created>1595854130741</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1595854130741</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Third">
+      <created>1595854517612</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1595854517612</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Third">
+      <created>1596020442558</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1596020442558</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Fourth">
+      <created>1596108560101</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1596108560101</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Fifth Commit">
+      <created>1596451503698</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1596451503698</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Fifth Commit">
+      <created>1596619960384</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1596619960384</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Third" />
+    <MESSAGE value="Fourth" />
+    <MESSAGE value="Fifth Commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fifth Commit" />
+  </component>
   <component name="WindowStateProjectService">
-    <state x="110" y="0" width="794" height="723" key="CommitChangelistDialog2" timestamp="1594896945243">
+    <state x="110" y="0" width="794" height="723" key="CommitChangelistDialog2" timestamp="1596619959732">
       <screen x="0" y="0" width="1024" height="728" />
     </state>
-    <state x="110" y="0" width="794" height="723" key="CommitChangelistDialog2/0.0.1024.728@0.0.1024.728" timestamp="1594896945243" />
-    <state width="1003" height="4" key="GridCell.Tab.0.bottom" timestamp="1594896487651">
+    <state x="110" y="0" width="794" height="723" key="CommitChangelistDialog2/0.0.1024.728@0.0.1024.728" timestamp="1596619959732" />
+    <state width="1003" height="25" key="GridCell.Tab.0.bottom" timestamp="1596620898191">
       <screen x="0" y="0" width="1024" height="728" />
     </state>
-    <state width="1003" height="4" key="GridCell.Tab.0.bottom/0.0.1024.728@0.0.1024.728" timestamp="1594896487651" />
-    <state width="1003" height="4" key="GridCell.Tab.0.center" timestamp="1594896487650">
+    <state width="1003" height="25" key="GridCell.Tab.0.bottom/0.0.1024.728@0.0.1024.728" timestamp="1596620898191" />
+    <state width="1003" height="25" key="GridCell.Tab.0.center" timestamp="1596620898188">
       <screen x="0" y="0" width="1024" height="728" />
     </state>
-    <state width="1003" height="4" key="GridCell.Tab.0.center/0.0.1024.728@0.0.1024.728" timestamp="1594896487650" />
-    <state width="1003" height="4" key="GridCell.Tab.0.left" timestamp="1594896487650">
+    <state width="1003" height="25" key="GridCell.Tab.0.center/0.0.1024.728@0.0.1024.728" timestamp="1596620898188" />
+    <state width="1003" height="25" key="GridCell.Tab.0.left" timestamp="1596620898185">
       <screen x="0" y="0" width="1024" height="728" />
     </state>
-    <state width="1003" height="4" key="GridCell.Tab.0.left/0.0.1024.728@0.0.1024.728" timestamp="1594896487650" />
-    <state width="1003" height="4" key="GridCell.Tab.0.right" timestamp="1594896487651">
+    <state width="1003" height="25" key="GridCell.Tab.0.left/0.0.1024.728@0.0.1024.728" timestamp="1596620898185" />
+    <state width="1003" height="25" key="GridCell.Tab.0.right" timestamp="1596620898189">
       <screen x="0" y="0" width="1024" height="728" />
     </state>
-    <state width="1003" height="4" key="GridCell.Tab.0.right/0.0.1024.728@0.0.1024.728" timestamp="1594896487651" />
+    <state width="1003" height="25" key="GridCell.Tab.0.right/0.0.1024.728@0.0.1024.728" timestamp="1596620898189" />
+    <state x="-33" y="0" key="SettingsEditor" timestamp="1595237431527">
+      <screen x="0" y="0" width="1024" height="728" />
+    </state>
+    <state x="-33" y="0" key="SettingsEditor/0.0.1024.728@0.0.1024.728" timestamp="1595237431527" />
+    <state x="107" y="99" width="800" height="523" key="Vcs.Push.Dialog.v2" timestamp="1596619980262">
+      <screen x="0" y="0" width="1024" height="728" />
+    </state>
+    <state x="107" y="99" width="800" height="523" key="Vcs.Push.Dialog.v2/0.0.1024.728@0.0.1024.728" timestamp="1596619980262" />
+    <state x="100" y="99" width="824" height="528" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1595854513083">
+      <screen x="0" y="0" width="1024" height="728" />
+    </state>
+    <state x="100" y="99" width="824" height="528" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1024.728@0.0.1024.728" timestamp="1595854513083" />
+    <state x="197" y="236" width="620" height="249" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1595854169484">
+      <screen x="0" y="0" width="1024" height="728" />
+    </state>
+    <state x="197" y="236" width="620" height="249" key="git4idea.remote.GitConfigureRemotesDialog/0.0.1024.728@0.0.1024.728" timestamp="1595854169484" />
   </component>
 </project>
