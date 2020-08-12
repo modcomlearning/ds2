@@ -1,4 +1,3 @@
-
 import pandas
 import matplotlib
 # get this code here
@@ -114,62 +113,15 @@ ax.legend(loc='best')
 plt.savefig('plot5.png')
 
 
+x, ax = plt.subplots()
+subset.groupby('Gender').size().plot(kind='pie', autopct = '%0.0f%%')
+ax.set_title('Gender Distribution in %')
+plt.savefig('plot6.png')
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+x, ax = plt.subplots()
+subset.groupby('Rank').size().plot(kind='pie', autopct = '%1.1f%%')
+ax.set_title('Rank Distribution in %')
+plt.savefig('plot7.png')
 
 
 
