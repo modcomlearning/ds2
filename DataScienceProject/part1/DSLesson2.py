@@ -69,12 +69,34 @@ import matplotlib.pyplot as plt
 # plt is an Object, subplots is its behavior
 # it returns tuple
 x, ax = plt.subplots()
-ax.scatter(subset['Reading'], subset['Writing'], s=30, color='red')
+ax.scatter(subset['Reading'], subset['Math'], s=30, color='red')
 ax.set_title('Reading vs Writing')
-ax.set_xlabel('Reading Marks(100%)')
+ax.set_xlabel('Math Marks(100%)')
 ax.set_ylabel('Writing Marks(100%)')
-#plt.show()
+plt.show()
 plt.savefig('plot1.png')
+
+# scatter plot can help in correlation, linear - Relationhsip between variables
+
+# histogram - get frequency of a numeric variables
+x, ax = plt.subplots()
+ax.hist(subset['Math'], color = 'green')
+ax.set_title('Math Distribution')
+ax.set_xlabel('Math Marks(100%)')
+ax.set_ylabel('Frequency')
+plt.savefig('plot2.png')
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
