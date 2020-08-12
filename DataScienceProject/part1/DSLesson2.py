@@ -134,6 +134,32 @@ ax.set_xlabel('Student Gender')
 ax.set_ylabel('Reading out 100')
 plt.savefig('plot8.png')
 
+# stacked/unstacked bar
+x, ax = plt.subplots()
+subset.groupby(['Gender','Rank'])['Reading'].mean().unstack().plot(kind='bar', stacked= False)
+ax.set_title('Average Reading marks by Gender and Rank')
+ax.set_xlabel('Gender')
+ax.set_ylabel('Reading out 100')
+ax.legend(loc='best')
+plt.savefig('plot9.png')
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
