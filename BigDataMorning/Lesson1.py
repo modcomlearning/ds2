@@ -4,7 +4,7 @@ print(5000)
 print('I Love Big data')
 
 # lets look at variables, data type
-# 5 data types: int, float, lists, tuple, dictionaries
+# 5 data types: int, float, lists, tuple, dictionaries, string
 number = 10    # int
 age = 56       # int
 money = 200.5   # float
@@ -40,7 +40,11 @@ print(counties)
 
 # tuples cannot be updated/immutable
 
+name = 'Joseph' # string
+# ALways remember to check the type of your variables
+print(type(name))
 
+# code : w7ilgll
 
 
 
