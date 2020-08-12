@@ -64,7 +64,8 @@ print(subset.groupby(['Rank','Gender'])['Writing'].mean())
 # plots
 # Scatter plot  - numeric variables
 import matplotlib.pyplot as plt
-
+print(plt.style.available)
+plt.style.use('seaborn')
 # plt is an Object, subplots is its behavior
 # it returns tuple
 x, ax = plt.subplots()
