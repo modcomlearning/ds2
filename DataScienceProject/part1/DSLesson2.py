@@ -118,10 +118,25 @@ subset.groupby('Gender').size().plot(kind='pie', autopct = '%0.0f%%')
 ax.set_title('Gender Distribution in %')
 plt.savefig('plot6.png')
 
+
 x, ax = plt.subplots()
-subset.groupby('Rank').size().plot(kind='pie', autopct = '%1.1f%%')
+subset.groupby('Rank').size().plot(kind='pie', autopct = '%1.1f%%',
+                                   explode = (0, 0.1, 0, 0.2, 0))
 ax.set_title('Rank Distribution in %')
 plt.savefig('plot7.png')
+
+
+# bar plot
+x ,  ax = plt.subplots()
+subset.groupby('Gender')['Reading'].mean().plot(kind='bar', color='green')
+ax.set_title('Students Gender by Average Reading')
+ax.set_xlabel('Student Gender')
+ax.set_ylabel('Reading out 100')
+plt.savefig('plot8.png')
+
+
+
+
 
 
 
