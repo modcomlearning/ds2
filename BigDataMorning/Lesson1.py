@@ -15,13 +15,24 @@ print(age)
 print(money)
 print(weight)
 
-
-# list
+# list   - uses []
 marks = [36,25,56,78,89,78,89,78,23,45,45.6]
 print(marks)
 
 counties =['Bomet','Nakuru','Nairobi','Kisumu']
 print(counties)
+
+print(marks[5])
+print(counties[1])
+
+# tuple - uses ()
+tokens = (4555,8888,8889,2333,4444,8844)
+teams = ('Chelsea','Man U',"Arsenal",'Man City','Liverpool')
+
+print(tokens)
+print(teams)
+
+
 
 
 
