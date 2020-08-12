@@ -85,12 +85,14 @@ ax.set_title('Math Distribution')
 ax.set_xlabel('Math Marks(100%)')
 ax.set_ylabel('Frequency')
 plt.savefig('plot2.png')
-plt.show()
+#plt.show()
 
 x, ax = plt.subplots()
-
-
-
+ax.hist(subset['Writing'], color = 'blue')
+ax.set_title('Writing Distribution')
+ax.set_xlabel('Writing Marks(100%)')
+ax.set_ylabel('Frequency')
+plt.savefig('plot3.png')
 
 
 
