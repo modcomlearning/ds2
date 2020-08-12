@@ -48,7 +48,7 @@ shopping_list.insert(3, 'Cake')
 print(shopping_list)
 
 # tuple are immutable- cannot be updated
-
+print(type(best_teams))
 
 
 
