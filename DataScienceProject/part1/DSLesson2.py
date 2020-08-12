@@ -105,6 +105,17 @@ ax.legend(loc='best')
 plt.savefig('plot4.png')
 
 
+x,  ax = plt.subplots()
+ax.plot(subset['Writing'], color = 'red', lw = 2)
+ax.set_title('Writing Distribution')
+ax.set_xlabel('Freq.')
+ax.set_ylabel('Writing Marks(100%)')
+ax.legend(loc='best')
+plt.savefig('plot5.png')
+
+
+
+
 
 
 
