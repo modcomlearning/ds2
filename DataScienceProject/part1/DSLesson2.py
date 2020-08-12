@@ -85,6 +85,7 @@ ax.set_title('Math Distribution')
 ax.set_xlabel('Math Marks(100%)')
 ax.set_ylabel('Frequency')
 plt.savefig('plot2.png')
+plt.show()
 
 
 
