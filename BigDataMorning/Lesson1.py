@@ -32,6 +32,19 @@ teams = ('Chelsea','Man U',"Arsenal",'Man City','Liverpool')
 print(tokens)
 print(teams)
 
+# What is the difference between a list and a tuple
+# lists can be updated/mutable
+counties.append('Nyeri')
+counties.remove('Kisumu')
+print(counties)
+
+# tuples cannot be updated/immutable
+
+
+
+
+
+
 
 
 
