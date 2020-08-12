@@ -88,11 +88,33 @@ plt.savefig('plot2.png')
 #plt.show()
 
 x, ax = plt.subplots()
-ax.hist(subset['Writing'], color = 'blue')
-ax.set_title('Writing Distribution')
-ax.set_xlabel('Writing Marks(100%)')
+ax.hist(subset['Reading'], color = 'blue')
+ax.set_title('Reading Distribution')
+ax.set_xlabel('Reading Marks(100%)')
 ax.set_ylabel('Frequency')
 plt.savefig('plot3.png')
+
+
+x, ax = plt.subplots()
+ax.hist(subset['Reading'], color='red' , label = 'Reading', alpha = 1)
+ax.hist(subset['Math'], color='green', label = 'Math', alpha = 0.5)
+ax.set_title('Reading , Maths, Distribution')
+ax.set_xlabel('Reading/Maths Marks(100%)')
+ax.set_ylabel('Frequency')
+ax.legend(loc='best')
+plt.savefig('plot4.png')
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
