@@ -87,7 +87,7 @@ ax.set_ylabel('Frequency')
 plt.savefig('plot2.png')
 plt.show()
 
-
+x, ax = plt.subplots()
 
 
 
