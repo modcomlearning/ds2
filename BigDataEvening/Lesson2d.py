@@ -8,10 +8,18 @@ def grading():
     else:
         print('You Passed')
 
-
 def checker():
-    age  = float(input('What is the kid age:'))
-    
+        age  = float(input('What is the kid age:'))
+        # check if age less 8 , lower classes, else upper classes
+        if age<=8:
+            print('Lower classes')
+        else:
+            print('Upper classes')
+
+# call/run/trigger
+checker()
+grading()
+
 
 
 
