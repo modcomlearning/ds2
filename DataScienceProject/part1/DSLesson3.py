@@ -16,7 +16,7 @@ print(opsd_daily.isnull().sum())
 # plots
 plt.style.use('seaborn')
 
-ax= opsd_daily.loc['2016',['Consumption']].plot()
+ax= opsd_daily.loc['2016-2',['Consumption']].plot()
 ax.set_title('Power Consumption in 2016')
 ax.set_ylabel('Power Consumption(Ghz)')
 plt.savefig('plot10.png')
