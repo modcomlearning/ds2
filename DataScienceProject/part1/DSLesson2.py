@@ -67,6 +67,7 @@ import matplotlib.pyplot as plt
 print(plt.style.available)
 plt.style.use('seaborn')
 
+
 from matplotlib import rcParams
 rcParams.update({'figure.autolayout': True})
 
@@ -146,7 +147,8 @@ subset.groupby(['Gender','Rank'])['Reading'].mean().unstack().plot(kind='bar', s
 plt.title('Average Reading marks by Gender and Rank')
 plt.xlabel('Gender')
 plt.ylabel('Reading out 100')
-ax.legend(loc='best')
+#ax.legend(loc='upper_center')
+plt.legend(bbox_to_anchor= (0.5, 0.5,1.2,0.4), loc='best')
 plt.savefig('plot9.png')
 
 
