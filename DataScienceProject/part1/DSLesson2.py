@@ -38,7 +38,7 @@ print(subset.isnull().sum())
 subset['Rank'].replace({1:'Freshman', 2:'Sophomore',3:'Junior',4:'Senior', 5:'Missing'}, inplace=True)
 subset['Gender'].replace({0:'Male', 1:'Female',2:'Missing'}, inplace=True)
 
-print(subset.describe()) # basic stats, only works with
+print(subset.describe()) # basic stats, only works with numeric
 print(subset.corr())
 
 
@@ -66,6 +66,10 @@ print(subset.groupby(['Rank','Gender'])['Writing'].mean())
 import matplotlib.pyplot as plt
 print(plt.style.available)
 plt.style.use('seaborn')
+
+from matplotlib import rcParams
+rcParams.update({'figure.autolayout': True})
+
 # plt is an Object, subplots is its behavior
 # it returns tuple
 x, ax = plt.subplots()
@@ -138,26 +142,12 @@ plt.savefig('plot8.png')
 # stacked/unstacked bar
 x, ax = plt.subplots()
 subset.groupby(['Gender','Rank'])['Reading'].mean().unstack().plot(kind='bar', stacked= False)
-ax.set_title('Average Reading marks by Gender and Rank')
-ax.set_xlabel('Gender')
-ax.set_ylabel('Reading out 100')
+#ax.set_title('Average Reading marks by Gender and Rank')
+plt.title('Average Reading marks by Gender and Rank')
+plt.xlabel('Gender')
+plt.ylabel('Reading out 100')
 ax.legend(loc='best')
 plt.savefig('plot9.png')
-
-
-
-# import matplotlib.pyplot as plt
-# df = pandas.read_csv("https://modcom.co.ke/datascience/datasets/power.csv", parse_dates=True)
-# print(df)
-#
-# x = pandas.to_datetime(['2018-01-05', '7/8/1952', 'Oct 10, 1995'])
-# print(x)
-#
-#
-# df = df.set_index('Date')
-#
-# ax = df.loc['2018', 'Consumption'].plot()
-# plt.show()
 
 
 
