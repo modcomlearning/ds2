@@ -30,8 +30,9 @@ def eastlands():
 
 # which function are you running
 def kenya():
-    temp = int(input('Temp'))
+    temp = int(input('Enter Temp'))
     if temp > 36.1 and temp < 37.5:
         print('Normal')
 
-
+# you have to call the function
+kenya()
