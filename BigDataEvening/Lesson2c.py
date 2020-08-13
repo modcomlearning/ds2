@@ -1,7 +1,6 @@
 
 # using elif  - else if
 # used for multiple conditions
-
 marks = float(input('What marks did you get:'))
 
 if marks <= 30:
@@ -19,6 +18,7 @@ elif marks > 75 and marks <= 100:
 else:
     print('Invalid. Out of Bounds')
 
+#elif works for multiple conditions*
 
 
 

@@ -4,7 +4,6 @@
 # if, if else, else if, while, for
 
 marks = float(input('What marks did you get:'))
-
 if marks <= 50:
     print('You Failed')  # works if condition is true
 
