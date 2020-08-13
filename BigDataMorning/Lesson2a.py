@@ -2,7 +2,7 @@
 # functions, control structures
 # Control structures - help in controlling the flow of the program
 # if, if else, elif , while, for.
-marks = 70
+marks = float(input('What did you get?'))
 
 if marks <= 50:
     print('You Failed') # will run if condition is true
