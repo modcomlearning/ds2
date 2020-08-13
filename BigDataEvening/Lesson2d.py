@@ -9,6 +9,10 @@ def grading():
         print('You Passed')
 
 
+def checker():
+    age  = float(input('What is the kid age:'))
+    
+
 
 
 
