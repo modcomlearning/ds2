@@ -29,7 +29,7 @@ print(counties[1])
 tokens = (4555,8888,8889,2333,4444,8844)
 teams = ('Chelsea','Man U',"Arsenal",'Man City','Liverpool')
 
-print(tokens)
+print(tokens[0])
 print(teams)
 
 # What is the difference between a list and a tuple
@@ -42,9 +42,25 @@ print(counties)
 
 name = 'Joseph' # string
 # ALways remember to check the type of your variables
-print(type(name))
+
 
 # code : w7ilgll
+
+person = {'name': 'Joseph', 'age':20}
+print(type(person))
+
+person['weight']  = 70 # adding
+person['age']  = 30 # updating
+
+person.pop('name')
+
+#person.clear()
+# del person
+
+print(person)
+
+
+
 
 
 

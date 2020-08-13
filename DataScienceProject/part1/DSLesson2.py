@@ -146,6 +146,27 @@ plt.savefig('plot9.png')
 
 
 
+# import matplotlib.pyplot as plt
+# df = pandas.read_csv("https://modcom.co.ke/datascience/datasets/power.csv", parse_dates=True)
+# print(df)
+#
+# x = pandas.to_datetime(['2018-01-05', '7/8/1952', 'Oct 10, 1995'])
+# print(x)
+#
+#
+# df = df.set_index('Date')
+#
+# ax = df.loc['2018', 'Consumption'].plot()
+# plt.show()
+
+
+
+
+
+
+
+
+
 
 
 

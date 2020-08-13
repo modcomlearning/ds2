@@ -50,6 +50,9 @@ print(shopping_list)
 # tuple are immutable- cannot be updated
 print(type(best_teams))
 
+# read on dictionaries
+
+
 
 
 
