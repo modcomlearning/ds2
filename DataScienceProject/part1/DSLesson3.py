@@ -41,7 +41,7 @@ plt.savefig('plot13.png')
 
 
 # range
-ax= opsd_daily.loc['2016-04-28':'2016-07-15',['Solar']].plot()
+ax= opsd_daily.loc['2016-04-28':'2016-07-15',['Solar','Wind','Consumption']].plot()
 ax.set_title('Solar Production in 2016 - April 28th to July 15')
 ax.set_ylabel('Solar(Ghz)')
 plt.savefig('plot14.png')
