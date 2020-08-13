@@ -37,7 +37,7 @@ print(subset.isnull().sum())
 # replace Gender from 0, 1, 2 to Male and Female
 subset['Rank'].replace({1:'Freshman', 2:'Sophomore',3:'Junior',4:'Senior', 5:'Missing'}, inplace=True)
 subset['Gender'].replace({0:'Male', 1:'Female',2:'Missing'}, inplace=True)
-
+# subset['Gender'].replace({'?','Unknown'}, inplace=True)
 print(subset.describe()) # basic stats, only works with numeric
 print(subset.corr())
 
