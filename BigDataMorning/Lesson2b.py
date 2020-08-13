@@ -11,5 +11,7 @@ if age > 5 and marks > 50 :
 elif age <= 5:
     print('They qualify for  a prize')
 
+elif age > 5 and marks <=50:
+    print('You will not proceed to the next class')
 
 
