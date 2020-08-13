@@ -3,7 +3,7 @@
 # Control statements help in controlling the flow of the program.
 # if, if else, else if, while, for
 
-marks = 12
+marks = int(input('What marks did you get:'))
 
 if marks <= 50:
     print('You Failed')  # works if condition is true
