@@ -16,7 +16,8 @@ elif marks > 50 and marks <= 75:
 elif marks > 75 and marks <= 100:
     print('Bravo!')
 
-
+else:
+    print('Invalid. Out of Bounds')
 
 
 
