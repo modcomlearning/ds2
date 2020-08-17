@@ -11,8 +11,25 @@ print(store.isnull().sum())
 
 # Describe data - works floats and ints
 print(store.describe())
-
 x, ax = plt.subplots()
 store.groupby('Segment').size().plot(kind='pie', autopct = '%1.1f%%')
 ax.set_title('Segment Distribution in %')
 plt.savefig('plot15.png')
+
+# stacked/unstacked bar
+x, ax = plt.subplots()
+store.groupby(['Region','Segment'])['Profit'].mean().unstack().plot(kind='bar',
+                                                                    stacked= False)
+#ax.set_title('Average Reading marks by Gender and Rank')
+plt.title('Average Reading marks by Gender and Rank')
+plt.xlabel('Region')
+plt.ylabel('Profit')
+#ax.legend(loc='upper_center')
+plt.legend(loc='best')
+plt.savefig('plot16.png')
+
+
+
+
+
+
