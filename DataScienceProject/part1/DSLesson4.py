@@ -4,7 +4,8 @@ import matplotlib.pyplot as plt
 import pandas
 pandas.set_option('display.max_columns', 6)
 pandas.set_option('display.max_rows', 50)
-store  = pandas.read_csv('https://modcom.co.ke/data/datasets/superstore.csv')
+store  = pandas.read_csv('https://modcom.co.ke/data/datasets/superstore.csv',
+                         parse_dates=['Order Date'], index_col=2)
 #print(store)
 print(store.dtypes)
 print(store.isnull().sum())
@@ -33,6 +34,14 @@ plt.ylabel('Profit')
 #ax.legend(loc='upper_center')
 plt.legend(loc='best')
 plt.savefig('plot16.png')
+
+
+# time series
+ax  = store.loc['2017-02', ['Profit']].plot()
+ax.set_title('Profit  - Order Date')
+ax.set_ylabel('Profit')
+plt.savefig('plot17.png')
+
 
 
 
