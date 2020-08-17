@@ -10,7 +10,7 @@ import pandas
 opsd_daily  = pandas.read_csv('https://modcom.co.ke/data/datasets/power.csv',
                               parse_dates=['Date'] , index_col=0)
 print(opsd_daily)
-
+# 202/02/02
 # check for empties
 print(opsd_daily.isnull().sum())
 # plots
@@ -38,7 +38,6 @@ ax= opsd_daily.loc['2016-04',['Solar']].plot()
 ax.set_title('Solar Production in 2016 - April')
 ax.set_ylabel('Solar(Ghz)')
 plt.savefig('plot13.png')
-
 
 # range
 ax= opsd_daily.loc['2016-04-28':'2016-07-15',['Solar','Wind','Consumption']].plot()

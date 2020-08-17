@@ -44,7 +44,8 @@ plt.savefig('fig2.png')
 
 # histogram for - petalwidth, petallength
 # scatter of - petalwidth, petallength
-#
+# 0729 225 710
+# TeamViewer
 
 
 
