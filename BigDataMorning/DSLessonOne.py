@@ -13,6 +13,15 @@ import sklearn
 pandas.set_option('display.max_rows', 150)
 dataframe = pandas.read_csv("https://modcom.co.ke/bigdata/datasets/iris.csv")
 print(dataframe)
+# Type of data: Numeric, Categorical/Norminal - categories, no order, Male/Female
+# Ordinal - Categorical - there is an order : low, medium, high
+# descriptive  - describing your data
+print(dataframe.describe())
+
+# correlation, how variables are correlated with each other
+# ones up , other goes down - Negative -  0  to -1
+# ones up, the other up   - Positive   - 0 to 1
+print(dataframe.corr())
 
 
 
