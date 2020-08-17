@@ -34,6 +34,21 @@ plt.ylabel('Freq')
 plt.savefig('fig1.png')
 
 
+# scatter plot  - shows relationship between 2 variables
+x, y = plt.subplots()
+y.scatter(dataframe['sepallength'], dataframe['petalwidth'] , color = 'green')
+plt.title('Relation between sepallength & petal width')
+plt.xlabel('sepallength -cm')
+plt.ylabel('petalwidth -cm')
+plt.savefig('fig2.png')
+
+
+
+
+
+
+
+
 
 
 
