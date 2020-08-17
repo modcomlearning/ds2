@@ -27,8 +27,13 @@ print(dataframe.corr())
 import matplotlib.pyplot  as plt
 # histogram
 x, y  = plt.subplots()
-y.hist(dataframe['sepallength'], color= 'red')
-plt.show()
+y.hist(dataframe['sepallength'], color= 'blue')
+plt.title('Distribution of sepallength')
+plt.xlabel('sepallength - cm')
+plt.ylabel('Freq')
+plt.savefig('fig1.png')
+
+
 
 
 
