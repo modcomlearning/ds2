@@ -42,6 +42,13 @@ plt.xlabel('sepallength -cm')
 plt.ylabel('petalwidth -cm')
 plt.savefig('fig2.png')
 
+# histogram for - petalwidth, petallength
+# scatter of - petalwidth, petallength
+#
+
+
+
+
 
 
 
