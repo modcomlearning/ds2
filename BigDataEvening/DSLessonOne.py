@@ -7,10 +7,10 @@ data = pandas.read_csv("https://modcom.co.ke/bigdataevening/datasets/iris.csv")
 print(data)
 # basic descriptive stats
 print(data.describe()) # numeric
-print(data.dtypes)
+
 
 # force sepalwidth to numeric
-
-data['sepalwidth'].replace({'?': 0} , inplace=True)
-pandas.to_numeric(data['sepalwidth'])
-
+#
+data['sepalwidth'] = pandas.to_numeric(data['sepalwidth'], errors='coerce')
+# above will make the ? , to be nan
+data['sepalwidth'].fillna(data['sepalwidth'].median(), inplace=True) # up[date
