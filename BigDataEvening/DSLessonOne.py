@@ -10,7 +10,14 @@ print(data.describe()) # numeric
 
 
 # force sepalwidth to numeric
-#
 data['sepalwidth'] = pandas.to_numeric(data['sepalwidth'], errors='coerce')
 # above will make the ? , to be nan
-data['sepalwidth'].fillna(data['sepalwidth'].median(), inplace=True) # up[date
+data['sepalwidth'].fillna(data['sepalwidth'].median(), inplace=True) # update
+data['petallength'].fillna(data['petallength'].median(), inplace=True) # update
+
+# scribe again
+print(data.describe())
+# correlation
+# when one goes up, the other goes up -:  0  -  1  : Positive
+# when one goes up, the other goes down -:  0 -  -1  : Negative
+print(data.corr())
