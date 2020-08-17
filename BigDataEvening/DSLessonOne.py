@@ -21,3 +21,22 @@ print(data.describe())
 # when one goes up, the other goes up -:  0  -  1  : Positive
 # when one goes up, the other goes down -:  0 -  -1  : Negative
 print(data.corr())
+
+
+# plots from piecharts, bar, pie, histograms, stacked bars, density plots, heatmaps
+import matplotlib.pyplot as plt
+# univariate , bivariate, multivariate plots
+# histogram, box, density - check some variable with a freq - univariate
+
+x, y = plt.subplots()
+y.hist(data['sepalwidth'], color = 'green')
+plt.show()
+
+
+
+
+
+
+
+
+
