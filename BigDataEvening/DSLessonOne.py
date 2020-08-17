@@ -30,9 +30,18 @@ import matplotlib.pyplot as plt
 
 x, y = plt.subplots()
 y.hist(data['sepalwidth'], color = 'green')
-plt.show()
+plt.title('Sepal Width Distribution')
+plt.xlabel('sepalwidth - cm')
+plt.ylabel('Freq.')
+plt.savefig('fig1.png')
 
 
+x, y = plt.subplots()
+y.scatter(data['petalwidth'], data['petallength'] , color = 'red')
+plt.title('sepalwidth vs sepallength')
+plt.xlabel('petalwidth -cm')
+plt.xlabel('petallength -cm')
+plt.savefig('fig2.png')
 
 
 
