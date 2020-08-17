@@ -41,6 +41,9 @@ ax  = store.loc['2017-02', ['Profit']].plot()
 ax.set_title('Profit  - Order Date')
 ax.set_ylabel('Profit')
 plt.savefig('plot17.png')
+# End.
+# Dashboard.
+
 
 
 
