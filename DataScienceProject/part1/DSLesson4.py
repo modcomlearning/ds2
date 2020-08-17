@@ -11,3 +11,8 @@ print(store.isnull().sum())
 
 # Describe data - works floats and ints
 print(store.describe())
+
+x, ax = plt.subplots()
+store.groupby('Segment').size().plot(kind='pie', autopct = '%1.1f%%')
+ax.set_title('Segment Distribution in %')
+plt.savefig('plot15.png')
