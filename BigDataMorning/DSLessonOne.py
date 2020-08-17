@@ -23,6 +23,14 @@ print(dataframe.describe())
 # ones up, the other up   - Positive   - 0 to 1
 print(dataframe.corr())
 
+# plots
+import matplotlib.pyplot  as plt
+# histogram
+x, y  = plt.subplots()
+y.hist(dataframe['sepallength'], color= 'red')
+plt.show()
+
+
 
 
 
