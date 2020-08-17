@@ -17,8 +17,14 @@ ax.set_title('Segment Distribution in %')
 plt.savefig('plot15.png')
 
 # stacked/unstacked bar
+import numpy
+# We have the Sales colm with a string
+store['Sales'] = pandas.to_numeric(store['Sales'], errors='coerce')
+store['Sales'].fillna(store['Sales'].median(), inplace=True)
+print(store.dtypes)
+
 x, ax = plt.subplots()
-store.groupby(['Region','Segment'])['Profit'].mean().unstack().plot(kind='bar',
+store.groupby(['Region','Segment'])['Sales'].mean().unstack().plot(kind='bar',
                                                                     stacked= False)
 #ax.set_title('Average Reading marks by Gender and Rank')
 plt.title('Average Reading marks by Gender and Rank')
@@ -27,6 +33,11 @@ plt.ylabel('Profit')
 #ax.legend(loc='upper_center')
 plt.legend(loc='best')
 plt.savefig('plot16.png')
+
+
+
+
+
 
 
 
