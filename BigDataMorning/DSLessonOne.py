@@ -66,10 +66,12 @@ plt.savefig('fig4.png')
 # line plots, scatter, density
 # density - univariate
 x, y = plt.subplots()
-y.plot(dataframe['petalwidth'], color= 'orange')
+y.plot(dataframe['petalwidth'], color= 'orange',lw=2,label='P-Widths')
+y.plot(dataframe['petallength'], color= 'red',lw=2, label='P-Lengths')
 plt.xlabel('Freq.')
 plt.ylabel('petalwidth')
-plt.savefig('fig5.png')
+y.legend(loc='best') # put the labels best location in plot
+plt.savefig('fig6.png')
 
 
 
