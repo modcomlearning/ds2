@@ -45,10 +45,13 @@ plt.savefig('fig2.png')
 
 # density plots
 x, y = plt.subplots()
-y.plot(data['petalwidth'], color = 'orange')
-plt.title('Distribution of Petal Width - cms')
+y.plot(data['petalwidth'], color = 'orange', label= 'Petal Width - cms')
+y.plot(data['petallength'], color = 'red', label= 'Petal Length - cms')
+y.plot(data['sepalwidth'], color = 'green', label= 'Sepal Width -cms')
+plt.title('petalwidth vs petallength vs sepalwidth')
 plt.xlabel('Freq.')
-plt.ylabel('petalwidth - cm')
+plt.ylabel('')
+y.legend(loc='best') # puts the legen on the best location
 plt.savefig('fig3.png')
 
 
