@@ -48,11 +48,25 @@ print(dataframe.groupby('class').mean())
 print(dataframe.groupby('class').describe())
 
 # pie chart
-dataframe.groupby('class').size().plot(kind='pie', autopct = '%2.2f%%')
+x, y = plt.subplots()
+dataframe.groupby('class').size().plot(kind='pie', autopct = '%2.2f%%',
+                                       explode =(0,0.1,0.2))
 plt.title('Proportion of flower class in %')
 plt.xlabel('')
 plt.ylabel('')
 plt.savefig('fig3.png')
+
+# bar chart
+x, y = plt.subplots()
+dataframe.groupby('class')['petalwidth'].mean().plot(kind='bar')
+plt.xlabel('Flower Class')
+plt.ylabel('Petal Width -cms')
+plt.savefig('fig4.png')
+
+
+
+
+
 
 
 
