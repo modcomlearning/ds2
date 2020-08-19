@@ -76,6 +76,9 @@ y.legend(loc='best') # put the labels best location in plot
 plt.savefig('fig6.png')
 # use tools
 
+# classification problem: the label is categorical, class
+# Models to be used, train, testing
+
 
 
 
