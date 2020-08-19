@@ -63,6 +63,13 @@ plt.xlabel('Flower Class')
 plt.ylabel('Petal Width -cms')
 plt.savefig('fig4.png')
 
+# line plots, scatter, density
+# density - univariate
+x, y = plt.subplots()
+y.plot(dataframe['petalwidth'], color= 'orange')
+plt.xlabel('Freq.')
+plt.ylabel('petalwidth')
+plt.savefig('fig5.png')
 
 
 
