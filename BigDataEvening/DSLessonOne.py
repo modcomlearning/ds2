@@ -59,12 +59,19 @@ print(data.groupby('class').size())
 print(data.groupby('class').sum())  # std(), median(), mode(), sum()
 
 x, y = plt.subplots()
-data.groupby('class').size().plot(kind='pie')
+data.groupby('class').size().plot(kind='pie', autopct='%1.1f%%')
 plt.title('Proportion of Flower Classes')
 plt.xlabel('')
 plt.ylabel('')
 plt.savefig('fig4.png')
 
+# bar plot
+x, y = plt.subplots()
+data.groupby('class')['petalwidth'].mean().plot(kind='bar', color='pink')
+plt.title('Proportion of Flower Classes')
+plt.xlabel('Flower Class')
+plt.ylabel('petalwidth - cms')
+plt.savefig('fig5.png')
 
 
 
