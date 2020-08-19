@@ -51,8 +51,12 @@ y.plot(data['sepalwidth'], color = 'green', label= 'Sepal Width -cms')
 plt.title('petalwidth vs petallength vs sepalwidth')
 plt.xlabel('Freq.')
 plt.ylabel('')
-y.legend(loc='best') # puts the legen on the best location
+y.legend(loc='best') # puts the legend on the best location
 plt.savefig('fig3.png')
+
+# pie chart - categorical
+print(data.groupby('class').size())
+print(data.groupby('class').sum())  # std(), median(), mode(), sum()
 
 
 
