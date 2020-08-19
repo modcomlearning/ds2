@@ -22,14 +22,15 @@ print(data.describe())
 # when one goes up, the other goes down -:  0 -  -1  : Negative
 print(data.corr())
 
-
 # plots from piecharts, bar, pie, histograms, stacked bars, density plots, heatmaps
 import matplotlib.pyplot as plt
 # univariate , bivariate, multivariate plots
 # histogram, box, density - check some variable with a freq - univariate
 
+
 x, y = plt.subplots()
 y.hist(data['sepalwidth'], color = 'green')
+y.hist(data['sepalwidth'], color = 'red')
 plt.title('Sepal Width Distribution')
 plt.xlabel('sepalwidth - cm')
 plt.ylabel('Freq.')
@@ -43,6 +44,8 @@ plt.xlabel('petalwidth -cm')
 plt.xlabel('petallength -cm')
 plt.savefig('fig2.png')
 
+
+# 0729 225 710
 
 
 

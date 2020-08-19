@@ -3,10 +3,8 @@
 import pandas
 # matplotlib  - for visualization
 import matplotlib
-
 # scikit learn  - Machine learning, Models, LR, KNN, RF,
 import sklearn
-
 # pandas.pydata.org
 #print(dir(sklearn))
 # dataframe has rows and colms
@@ -22,10 +20,9 @@ print(dataframe.describe())
 # ones up , other goes down - Negative -  0  to -1
 # ones up, the other up   - Positive   - 0 to 1
 print(dataframe.corr())
-
 # plots
 import matplotlib.pyplot  as plt
-# histogram
+# histogram - univariate
 x, y  = plt.subplots()
 y.hist(dataframe['sepallength'], color= 'blue')
 plt.title('Distribution of sepallength')
@@ -46,6 +43,15 @@ plt.savefig('fig2.png')
 # scatter of - petalwidth, petallength
 # 0729 225 710
 # TeamViewer
+print(dataframe.groupby('class').size())
+print(dataframe.groupby('class').mean())
+print(dataframe.groupby('class').describe())
+
+
+
+
+
+
 
 
 
