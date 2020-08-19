@@ -47,7 +47,12 @@ print(dataframe.groupby('class').size())
 print(dataframe.groupby('class').mean())
 print(dataframe.groupby('class').describe())
 
-
+# pie chart
+dataframe.groupby('class').size().plot(kind='pie', autopct = '%2.2f%%')
+plt.title('Proportion of flower class in %')
+plt.xlabel('')
+plt.ylabel('')
+plt.savefig('fig3.png')
 
 
 
