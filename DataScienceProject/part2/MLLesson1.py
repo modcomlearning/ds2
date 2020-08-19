@@ -32,7 +32,7 @@ from sklearn.tree import DecisionTreeClassifier
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn.naive_bayes import GaussianNB
 
-model = KNeighborsClassifier()
+model = DecisionTreeClassifier()
 model.fit(X_train, Y_train) # done, learning from 70%
 
 

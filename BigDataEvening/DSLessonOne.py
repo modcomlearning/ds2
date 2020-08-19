@@ -8,14 +8,13 @@ print(data)
 # basic descriptive stats
 print(data.describe()) # numeric
 
-
 # force sepalwidth to numeric
 data['sepalwidth'] = pandas.to_numeric(data['sepalwidth'], errors='coerce')
 # above will make the ? , to be nan
 data['sepalwidth'].fillna(data['sepalwidth'].median(), inplace=True) # update
 data['petallength'].fillna(data['petallength'].median(), inplace=True) # update
 
-# scribe again
+# describe again
 print(data.describe())
 # correlation
 # when one goes up, the other goes up -:  0  -  1  : Positive
@@ -26,7 +25,6 @@ print(data.corr())
 import matplotlib.pyplot as plt
 # univariate , bivariate, multivariate plots
 # histogram, box, density - check some variable with a freq - univariate
-
 
 x, y = plt.subplots()
 y.hist(data['sepalwidth'], color = 'green')
@@ -41,11 +39,21 @@ x, y = plt.subplots()
 y.scatter(data['petalwidth'], data['petallength'] , color = 'red')
 plt.title('sepalwidth vs sepallength')
 plt.xlabel('petalwidth -cm')
-plt.xlabel('petallength -cm')
+plt.ylabel('petallength -cm')
 plt.savefig('fig2.png')
 
 
-# 0729 225 710
+# density plots
+x, y = plt.subplots()
+y.plot(data['petalwidth'], color = 'orange')
+plt.title('Distribution of Petal Width - cms')
+plt.xlabel('Freq.')
+plt.ylabel('petalwidth - cm')
+plt.savefig('fig3.png')
+
+
+
+
 
 
 
