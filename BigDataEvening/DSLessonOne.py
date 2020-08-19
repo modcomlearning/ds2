@@ -25,6 +25,8 @@ print(data.corr())
 import matplotlib.pyplot as plt
 # univariate , bivariate, multivariate plots
 # histogram, box, density - check some variable with a freq - univariate
+print(plt.style.available)
+plt.style.use('seaborn')
 
 x, y = plt.subplots()
 y.hist(data['sepalwidth'], color = 'green')
@@ -59,7 +61,7 @@ print(data.groupby('class').size())
 print(data.groupby('class').sum())  # std(), median(), mode(), sum()
 
 x, y = plt.subplots()
-data.groupby('class').size().plot(kind='pie', autopct='%1.1f%%')
+data.groupby('class').size().plot(kind='pie', autopct='%2.2f%%')
 plt.title('Proportion of Flower Classes')
 plt.xlabel('')
 plt.ylabel('')
