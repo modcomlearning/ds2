@@ -22,6 +22,8 @@ print(dataframe.describe())
 print(dataframe.corr())
 # plots
 import matplotlib.pyplot  as plt
+print(plt.style.available) # check vailable themes
+plt.style.use('seaborn') # use ggplot
 # histogram - univariate
 x, y  = plt.subplots()
 y.hist(dataframe['sepallength'], color= 'blue')
@@ -72,23 +74,7 @@ plt.xlabel('Freq.')
 plt.ylabel('petalwidth')
 y.legend(loc='best') # put the labels best location in plot
 plt.savefig('fig6.png')
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# use tools
 
 
 
