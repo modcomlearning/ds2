@@ -58,9 +58,12 @@ plt.savefig('fig3.png')
 print(data.groupby('class').size())
 print(data.groupby('class').sum())  # std(), median(), mode(), sum()
 
-
-
-
+x, y = plt.subplots()
+data.groupby('class').size().plot(kind='pie')
+plt.title('Proportion of Flower Classes')
+plt.xlabel('')
+plt.ylabel('')
+plt.savefig('fig4.png')
 
 
 
