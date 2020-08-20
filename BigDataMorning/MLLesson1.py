@@ -38,6 +38,13 @@ model.fit(X_train,Y_train) # we fit only the training set
 print('Training....')
 # Done
 # Test your model with the 30% test set
+# Step 4: Test the model using the 30%,  X_test, Y_test
+predictions = model.predict(X_test) # we hide Y_test , original outcomes
+#print(predictions)
+#print(Y_test)
+from sklearn.metrics import accuracy_score
+print(accuracy_score(Y_test, predictions))
+
 
 
 
