@@ -31,8 +31,15 @@ from sklearn.svm import SVC
 
 model = KNeighborsClassifier()
 model.fit(X_train, Y_train) # we hide x_test, y_test from the model
-print('Training....')
+print('Training....') # above is the learning part
 
+#Step 4: Test your model
+# Ask the model now to predict x_test, hide y_test -  outcomes
+predictions = model.predict(X_test)
+print(Y_test)
+
+from sklearn.metrics import accuracy_score
+print(accuracy_score(Y_test,predictions))
 
 
 
