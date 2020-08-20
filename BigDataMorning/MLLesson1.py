@@ -52,9 +52,9 @@ from sklearn.metrics import classification_report
 print(classification_report(Y_test, predictions))
 
 
-
-
-
+# Step 5: use it , improve it, optimize it,
+predicted = model.predict([[6.1, 2.5 , 5.8,  1.8]])
+print(predicted)
 
 
 
