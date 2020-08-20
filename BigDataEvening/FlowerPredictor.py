@@ -19,4 +19,9 @@ X_train, X_test, Y_train, Y_test = model_selection.train_test_split(X,Y,
                                                                     random_state=7)
 
 
-
+# Step 3: Create algorithms for machine learning
+from sklearn.neighbors import KNeighborsClassifier
+from sklearn.naive_bayes import GaussianNB
+from sklearn.linear_model import LogisticRegression
+from sklearn.tree import DecisionTreeClassifier
+from sklearn.svm import SVC
