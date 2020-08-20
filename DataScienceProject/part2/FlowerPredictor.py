@@ -29,6 +29,13 @@ from sklearn.linear_model import LogisticRegression
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.svm import SVC
 
+model = KNeighborsClassifier()
+model.fit(X_train, Y_train) # we hide x_test, y_test from the model
+print('Training....')
+
+
+
+
 
 
 
