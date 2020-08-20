@@ -46,3 +46,5 @@ from sklearn.metrics import confusion_matrix
 print(confusion_matrix(Y_test, predictions))
 
 # Step 5: Use it, Deploy it, Optimize it.
+predicted = model.predict([[3.6,2.6,5.2,0.8], [4.2,5.2,0.5, 1.6]])
+print(predicted)
