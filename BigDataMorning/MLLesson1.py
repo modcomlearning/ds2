@@ -32,6 +32,16 @@ from sklearn.ensemble import RandomForestClassifier
 from sklearn.linear_model import LogisticRegression
 from sklearn.discriminant_analysis import LinearDiscriminantAnalysis
 
+# Step 3: Pick a model/algorithm
+model = KNeighborsClassifier()
+model.fit(X_train,Y_train) # we fit only the training set
+print('Training....')
+# Done
+# Test your model with the 30% test set
+
+
+
+
 
 
 
