@@ -24,5 +24,17 @@ X_train, X_test, Y_train, Y_test = model_selection.train_test_split(X,Y,
 # X_train is 70% of X, X_test is 30% of the X
 # Y_train is 70% of Y, Y_test is 30% of the Y
 
+from sklearn.neighbors import KNeighborsClassifier
+from sklearn.tree import DecisionTreeClassifier
+from sklearn.naive_bayes import GaussianNB
+from sklearn.svm import SVC
+from sklearn.ensemble import RandomForestClassifier
+from sklearn.linear_model import LogisticRegression
+from sklearn.discriminant_analysis import LinearDiscriminantAnalysis
+
+
+
+
+
 
 
