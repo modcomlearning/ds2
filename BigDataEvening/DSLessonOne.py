@@ -1,6 +1,5 @@
 # pandas helps in data preparation.
 import pandas
-
 # matplotlib - creating graphs, plots
 import matplotlib
 data = pandas.read_csv("https://modcom.co.ke/bigdataevening/datasets/iris.csv")
@@ -67,6 +66,7 @@ plt.xlabel('')
 plt.ylabel('')
 plt.savefig('fig4.png')
 
+
 # bar plot
 x, y = plt.subplots()
 data.groupby('class')['petalwidth'].mean().plot(kind='bar', color='pink')
@@ -75,7 +75,7 @@ plt.xlabel('Flower Class')
 plt.ylabel('petalwidth - cms')
 plt.savefig('fig5.png')
 
-
-
+import sklearn
+# ML, 
 
 
