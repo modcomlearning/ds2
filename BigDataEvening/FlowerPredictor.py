@@ -39,5 +39,10 @@ print(predictions)
 from sklearn.metrics import accuracy_score
 print(accuracy_score(Y_test, predictions)) # we check if predictions match the y-test
 
+from sklearn.metrics import classification_report
+print(classification_report(Y_test, predictions))
 
+from sklearn.metrics import confusion_matrix
+print(confusion_matrix(Y_test, predictions))
 
+# Step 5: Use it, Deploy it, Optimize it.
