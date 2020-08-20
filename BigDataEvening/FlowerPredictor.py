@@ -25,3 +25,12 @@ from sklearn.naive_bayes import GaussianNB
 from sklearn.linear_model import LogisticRegression
 from sklearn.tree import DecisionTreeClassifier
 from sklearn.svm import SVC
+
+# pick a model above fit X_train, Y_train
+model = KNeighborsClassifier()
+model.fit(X_train,Y_train)  # we expose the X_train, Y_train to model
+# Model learns from data in above code.
+print('Learning..Training...')
+
+
+
