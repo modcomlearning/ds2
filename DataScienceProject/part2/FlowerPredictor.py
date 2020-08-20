@@ -47,8 +47,13 @@ print(classification_report(Y_test,predictions))
 from sklearn.metrics import confusion_matrix
 print(confusion_matrix(Y_test,predictions))
 
-# Step 4 : Use it,
-predicted = model.predict([[7.0,2.5,2.5,0.2]]) # ?
+# Step 4 : Use it.
+sepallength = float(input("What is sepal length -cm"))
+sepalwidth = float(input("What is sepal width -cm"))
+petallength = float(input("What is petal length -cm"))
+petalwidth = float(input("What is petal length -cm"))
+
+predicted = model.predict([[sepallength,sepalwidth,petallength,petalwidth]]) # ?
 print(predicted)
 
 
