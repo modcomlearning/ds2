@@ -5,7 +5,7 @@ import sklearn
 
 dataframe = pandas.read_csv('https://modcom.co.ke/data/datasets/iris.csv')
 print(dataframe)
-
+# cleaning.
 # Step 1: split data into features and outcome
 array = dataframe.values
 # print(array)
@@ -47,8 +47,9 @@ print(classification_report(Y_test,predictions))
 from sklearn.metrics import confusion_matrix
 print(confusion_matrix(Y_test,predictions))
 
-
-
+# Step 4 : Use it,
+predicted = model.predict([[7.0,2.5,2.5,0.2]]) # ?
+print(predicted)
 
 
 
