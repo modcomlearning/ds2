@@ -32,5 +32,12 @@ model.fit(X_train,Y_train)  # we expose the X_train, Y_train to model
 # Model learns from data in above code.
 print('Learning..Training...')
 
+# Step 4: We now ask the model, after learning - to predict x_test
+predictions = model.predict(X_test)
+print(predictions)
+
+from sklearn.metrics import accuracy_score
+print(accuracy_score(Y_test, predictions)) # we check if predictions match the y-test
+
 
 
