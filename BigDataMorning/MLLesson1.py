@@ -45,8 +45,11 @@ predictions = model.predict(X_test) # we hide Y_test , original outcomes
 from sklearn.metrics import accuracy_score
 print(accuracy_score(Y_test, predictions))
 
+from sklearn.metrics import confusion_matrix
+print(confusion_matrix(Y_test, predictions))
 
-
+from sklearn.metrics import classification_report
+print(classification_report(Y_test, predictions))
 
 
 
