@@ -53,7 +53,12 @@ print(classification_report(Y_test, predictions))
 
 
 # Step 5: use it , improve it, optimize it,
-predicted = model.predict([[6.1, 2.5 , 5.8,  1.8]])
+sepallength = float(input('Enter sepallength -cm:'))
+sepalwidth = float(input('Enter sepalwidth - cm:'))
+petallength = float(input('Enter petallength -cm:'))
+petalwidth = float(input('Enter petalwidth -cm:'))
+
+predicted = model.predict([[sepallength, sepalwidth , petallength,  petalwidth]])
 print(predicted)
 
 
