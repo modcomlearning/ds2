@@ -6,6 +6,8 @@ pandas.set_option('display.max_rows', 150)
 dataframe = pandas.read_csv("https://modcom.co.ke/bigdata/datasets/iris.csv")
 print(dataframe)
 
+
+
 import sklearn
 
 # Step 1: split your data into features and outcome/target/label/output
@@ -18,7 +20,7 @@ Y = array[:, 4]    # label/outcome
 # use 30% of data for testing
 from sklearn import model_selection
 X_train, X_test, Y_train, Y_test = model_selection.train_test_split(X,Y,
-                                                                test_size=0.30,
+                                                                test_size=0.40,
                                                                 random_state=7)
 
 # X_train is 70% of X, X_test is 30% of the X
@@ -33,7 +35,7 @@ from sklearn.linear_model import LogisticRegression
 from sklearn.discriminant_analysis import LinearDiscriminantAnalysis
 
 # Step 3: Pick a model/algorithm
-model = KNeighborsClassifier()
+model = LinearDiscriminantAnalysis()
 model.fit(X_train,Y_train) # we fit only the training set
 print('Training....')
 # Done
