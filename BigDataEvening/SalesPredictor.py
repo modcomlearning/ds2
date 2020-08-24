@@ -25,3 +25,6 @@ print(predictions)
 from sklearn.metrics import r2_score
 print('Accuracy ', r2_score(Y_test, predictions))
 
+# deploy it, use it
+predicted = model.predict([[100,0,0]])  # expenses as inputs  : 500 USD
+print('You will sell ', predicted, 'Units')
