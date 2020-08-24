@@ -32,5 +32,12 @@ print(predictions)
 
 # compare predictions with y_test, R squared gives the % performance
 from sklearn.metrics import r2_score,mean_squared_error
+print('Accuracy ', r2_score(Y_test, predictions))
+print('Mean squared error', mean_squared_error(Y_test, predictions))
+# MSE = 2.7 --Sqrt =  1.5
+     # TV, Radio, newspaper
+expense =  [[200,150,0]]
+predicted = model.predict(expense)
+print('You will sell ', predicted)
 
-print('Accuarcy ', r2_score(Y_test, predictions))
+
