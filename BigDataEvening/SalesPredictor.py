@@ -18,3 +18,8 @@ from sklearn.linear_model import LinearRegression
 model = LinearRegression()
 model.fit(X_train, Y_train)
 print('Model Learning Complete')
+
+predictions = model.predict(X_test)
+print(predictions)
+
+from sklearn.metrics import r2_score
