@@ -12,4 +12,9 @@ Y = array[:, 4]     # outcome/output/sales
 from sklearn import model_selection
 X_train, X_test, Y_train, Y_test = model_selection.train_test_split(X,Y,
                                                                     test_size=0.30,
-                                                                    random_state=7) #42
+                                                                    random_state=42) #42
+
+from sklearn.linear_model import LinearRegression
+model = LinearRegression()
+model.fit(X_train, Y_train)
+print('Model Learning Complete')
