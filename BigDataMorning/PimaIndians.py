@@ -13,6 +13,19 @@ X = array[:, 0:8]   # means 0 - 7 : Features
 Y = array[:, 8]    # label/outcome
 
 
+# feature selection
+from sklearn.feature_selection import RFE
+from sklearn.ensemble import RandomForestClassifier
+rfc = RandomForestClassifier(n_estimators=40)
+rfe  = RFE(rfc, 5)
+fitted = rfe.fit(X,Y)
+print("Selected %s" % (fitted.support_))
+
+
+
+
+
+
 # there is a class imbalance
 import imblearn
 from imblearn.over_sampling import SMOTE
@@ -59,3 +72,9 @@ print(classification_report(Y_test, predictions))
 newpatient = [[3,170,80,60,100,28,0.800,75]]
 predicted = model.predict(newpatient)
 print(predicted)
+# RFE   - pic the top features and eliminate features that were not performing
+# Feature selection
+
+
+
+
