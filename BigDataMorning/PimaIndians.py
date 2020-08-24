@@ -17,7 +17,7 @@ Y = array[:, 8]    # label/outcome
 import imblearn
 from imblearn.over_sampling import SMOTE
 # virtual records.
-smote = SMOTE(ratio= 'auto', kind = 'regular', random_state=42)
+smote = SMOTE( random_state=42)
 
 X_new , Y_new = smote.fit_sample(X,Y)
 # X_new, Y_new now have equal Positive/Negative, it raised the positives with virtual data
@@ -39,7 +39,7 @@ from sklearn.linear_model import LogisticRegression
 from sklearn.discriminant_analysis import LinearDiscriminantAnalysis
 
 # Step 3: Pick a model/algorithm
-model = LinearDiscriminantAnalysis()
+model = RandomForestClassifier()
 model.fit(X_train,Y_train) # we fit only the training set
 print('Training....')
 
@@ -56,4 +56,6 @@ print(confusion_matrix(Y_test, predictions))
 from sklearn.metrics import classification_report
 print(classification_report(Y_test, predictions))
 
-
+newpatient = [[3,170,80,60,100,28,0.800,75]]
+predicted = model.predict(newpatient)
+print(predicted)
