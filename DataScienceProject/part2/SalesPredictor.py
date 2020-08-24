@@ -36,3 +36,6 @@ print(r2_score(Y_test,predictions))
 from sklearn.metrics import mean_squared_error
 print('MSE', mean_squared_error(Y_test, predictions)) # its squared, get sqrt
 # MSE =  3.79679723671522  sqrt  - 1.8 + 1.8
+
+predicted = model.predict([[20,56,100]])
+print('You will sell ', predicted, 'Units')
