@@ -22,6 +22,11 @@ from sklearn.linear_model import LinearRegression
 from sklearn.tree import DecisionTreeRegressor
 from sklearn.neighbors import KNeighborsRegressor
 from sklearn.svm import SVR
+model = LinearRegression()
+model.fit(X_train, Y_train)  # 70% of 200
+print('Training.....')
 
-
+# ask the model to predict x_test
+predictions = model.predict(X_test) # we hide the answers in y_test
+print(predictions)
 
