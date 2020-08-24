@@ -30,4 +30,7 @@ print('Training....')
 predictions = model.predict(X_test)
 print(predictions)
 
-# compare predictions with y_test
+# compare predictions with y_test, R squared gives the % performance
+from sklearn.metrics import r2_score,mean_squared_error
+
+print('Accuarcy ', r2_score(Y_test, predictions))
