@@ -26,12 +26,10 @@ smote = SMOTE(random_state=42)
 X_new, Y_new = smote.fit_sample(X,Y)
 
 
-
-
 # Step 2: split data into training set and test set.
 # 70% for training , 30% for test set
 from sklearn import model_selection
-X_train, X_test, Y_train, Y_test = model_selection.train_test_split(X,Y,
+X_train, X_test, Y_train, Y_test = model_selection.train_test_split(X_new,Y_new,
                                                                 test_size=0.30,
                                                                 random_state=42)
 
@@ -48,7 +46,7 @@ from sklearn.linear_model import LogisticRegression
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.svm import SVC
 
-model = RandomForestClassifier(n_estimators=40)
+model = RandomForestClassifier(n_estimators=30)
 model.fit(X_train, Y_train) # we hide x_test, y_test from the model
 print('Training....') # above is the learning part
 
