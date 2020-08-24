@@ -1,5 +1,4 @@
 
-
 # Supervised and unsupervised learning in ML
 # Supervised - Classification, Regression
 # Unsupervised - Clustering of Data
@@ -68,10 +67,5 @@ print(confusion_matrix(Y_test,predictions))
 
 predicted = model.predict([[2,100,150, 150,50,25,0.866, 55]])
 print(predicted)
-
-
-
-
-
 
 
