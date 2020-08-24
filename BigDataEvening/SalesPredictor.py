@@ -23,3 +23,5 @@ predictions = model.predict(X_test)
 print(predictions)
 
 from sklearn.metrics import r2_score
+print('Accuracy ', r2_score(Y_test, predictions))
+
