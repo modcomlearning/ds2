@@ -41,3 +41,6 @@ predicted = model.predict(expense)
 print('You will sell ', predicted)
 
 
+# clustering... unsupervised, KMEANS algorithms.
+# IBM Watson Studio... https://dataplatform.cloud.ibm.com/login
+
