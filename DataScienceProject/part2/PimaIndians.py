@@ -36,7 +36,6 @@ X_train, X_test, Y_train, Y_test = model_selection.train_test_split(X_new,Y_new,
 
 
 
-
 # Step 3: Create algorithms/model and expose the X_train, Y_train = 70% of data
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn.tree import DecisionTreeClassifier
@@ -67,6 +66,8 @@ print(confusion_matrix(Y_test,predictions))
 # machine algorithms do not work with strings, change them to 0,1.
 # All string data must be encoded to 0,1s
 
+predicted = model.predict([[2,100,150, 150,50,25,0.866, 55]])
+print(predicted)
 
 
 
