@@ -22,10 +22,6 @@ fitted = rfe.fit(X,Y)
 print("Selected %s" % (fitted.support_))
 
 
-
-
-
-
 # there is a class imbalance
 import imblearn
 from imblearn.over_sampling import SMOTE
@@ -40,7 +36,6 @@ from sklearn import model_selection
 X_train, X_test, Y_train, Y_test = model_selection.train_test_split(X_new,Y_new,
                                                                 test_size=0.30,
                                                                 random_state=7)
-
 
 
 from sklearn.neighbors import KNeighborsClassifier
@@ -74,7 +69,4 @@ predicted = model.predict(newpatient)
 print(predicted)
 # RFE   - pic the top features and eliminate features that were not performing
 # Feature selection
-
-
-
 
