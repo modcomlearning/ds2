@@ -30,3 +30,9 @@ print('Training.....')
 predictions = model.predict(X_test) # we hide the answers in y_test
 print(predictions)
 
+from sklearn.metrics import r2_score
+print(r2_score(Y_test,predictions))
+
+from sklearn.metrics import mean_squared_error
+print('MSE', mean_squared_error(Y_test, predictions)) # its squared, get sqrt
+# MSE =  3.79679723671522  sqrt  - 1.8 + 1.8
