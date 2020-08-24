@@ -16,7 +16,7 @@ from sklearn import model_selection
 # 30% of 150 rows - testing set
 X_train, X_test, Y_train, Y_test = model_selection.train_test_split(X,Y,
                                                                     test_size=0.30,
-                                                                    random_state=7)
+                                                                    random_state=7) #42
 
 
 # Step 3: Create algorithms for machine learning
@@ -46,5 +46,5 @@ from sklearn.metrics import confusion_matrix
 print(confusion_matrix(Y_test, predictions))
 
 # Step 5: Use it, Deploy it, Optimize it.
-predicted = model.predict([[3.6,2.6,5.2,0.8], [4.2,5.2,0.5, 1.6]])
+predicted = model.predict([[3.6,2.6,5.2,0.8], [4.2,5.2,0.5,1.6],[5.2,3.5,1.2,2.8]])
 print(predicted)
