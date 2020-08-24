@@ -16,7 +16,6 @@ X_train, X_test, Y_train, Y_test = model_selection.train_test_split(X,Y,
                                                                 test_size=0.30,
                                                                 random_state=42)
 
-
 # Step 3: bring in the models
 from sklearn.linear_model import LinearRegression
 from sklearn.tree import DecisionTreeRegressor
@@ -37,5 +36,5 @@ from sklearn.metrics import mean_squared_error
 print('MSE', mean_squared_error(Y_test, predictions)) # its squared, get sqrt
 # MSE =  3.79679723671522  sqrt  - 1.8 + 1.8
 
-predicted = model.predict([[20,56,100]])
+predicted = model.predict([[800,0,0]])
 print('You will sell ', predicted, 'Units')
