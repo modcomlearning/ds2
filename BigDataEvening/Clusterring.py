@@ -19,7 +19,13 @@ model = KMeans(random_state=42, n_clusters=8)
 model.fit(X)
 print('Model clustering....Done!')
 
+# Step 3: view your clusters
+centronoids = model.cluster_centers_
 
+clusters = pandas.DataFrame(centronoids,
+                            columns=['FlightMiles','FlightTrans','DaysSinceEnroll'])
+
+print(clusters)
 
 
 
