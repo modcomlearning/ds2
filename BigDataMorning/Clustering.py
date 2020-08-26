@@ -32,3 +32,10 @@ print(clusters)
 subset['label'] = model.labels_
 subset = subset[subset['label'] == 8]
 print(subset)
+
+
+import xlwt
+subset.to_excel('cluster8.xls', columns=['FlightMiles','FlightTrans','DaysSinceEnroll'])
+
+
+
