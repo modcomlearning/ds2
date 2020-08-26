@@ -15,7 +15,7 @@ X = array[:, 0:3]  # Means upto 2
 # No outcome Y
 
 from sklearn.cluster import KMeans
-model = KMeans(n_clusters=5)
+model = KMeans(n_clusters=10)
 model.fit(X)  # we fit the X
 print('Model creating clusters....Done!')
 
@@ -26,3 +26,9 @@ clusters = pandas.DataFrame(centronoids,
                             columns=['FlightMiles','FlightTrans','DaysSinceEnroll'])
 
 print(clusters)
+
+# take each cluster a time , understand.
+# Who is in the cluster? 0
+subset['label'] = model.labels_
+subset = subset[subset['label'] == 8]
+print(subset)
