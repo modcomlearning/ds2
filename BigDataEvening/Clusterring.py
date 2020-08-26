@@ -27,8 +27,12 @@ clusters = pandas.DataFrame(centronoids,
 
 print(clusters)
 
+# Step 4: get who is in these clusters, put them in excel worksheet, share them with ...
+subset['label']  = model.labels_
+subset = subset[subset['label'] == 3]
 
-
+import xlwt
+subset.to_excel("cluster3.xls", columns=['FlightMiles','FlightTrans','DaysSinceEnroll'])
 
 
 
