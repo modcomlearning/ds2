@@ -14,7 +14,6 @@ array = dataframe.values
 X = array[:, 0:8] # always a -1 , upto 7: features
 Y = array[:, 8]  # 8th counted here: outcome
 
-
 # class imbalance - positives are less than negatives
 # create a virtual records/artificial data
 import imblearn

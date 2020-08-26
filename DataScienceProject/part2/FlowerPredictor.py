@@ -1,5 +1,3 @@
-
-
 # Supervised and unsupervised learning in ML
 # Supervised - Classification, Regression
 # Unsupervised - Clustering of Data
@@ -21,7 +19,7 @@ Y = array[:, 4]  # 4th counted here: outcome
 from sklearn import model_selection
 X_train, X_test, Y_train, Y_test = model_selection.train_test_split(X,Y,
                                                                 test_size=0.30,
-                                                                random_state=2)
+                                                                random_state=42)
 
 
 # Step 3: Create algorithms/model and expose the X_train, Y_train = 70% of data

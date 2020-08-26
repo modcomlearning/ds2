@@ -36,5 +36,20 @@ from sklearn.metrics import mean_squared_error
 print('MSE', mean_squared_error(Y_test, predictions)) # its squared, get sqrt
 # MSE =  3.79679723671522  sqrt  - 1.8 + 1.8
 
-predicted = model.predict([[800,0,0]])
+
+
+import pickle
+# save the model to disk
+filename = 'brain.sav'
+pickle.dump(model, open(filename, 'wb')) # knowledge dumped.
+
+
+filename = 'brain.sav'
+# later use the dumped model
+#load the brain
+loaded_model = pickle.load(open(filename, 'rb'))
+
+predicted = loaded_model.predict([[0,800,0]])
 print('You will sell ', predicted, 'Units')
+
+
