@@ -10,3 +10,13 @@ print(dataframe)
 subset = dataframe[['FlightMiles','FlightTrans','DaysSinceEnroll']]
 print(subset)
 
+array = subset.values
+X = array[:, 0:3]  # Means upto 2
+# No outcome Y
+
+from sklearn.cluster import KMeans
+model = KMeans(n_clusters=3)
+model.fit(X)  # we fit the X
+print('Model creating clusters....')
+
+
