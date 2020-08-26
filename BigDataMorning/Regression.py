@@ -26,7 +26,6 @@ model.fit(X_train, Y_train)
 print('Training....')
 
 # STep 4: testing
-
 predictions = model.predict(X_test)
 print(predictions)
 
