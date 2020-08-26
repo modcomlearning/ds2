@@ -8,3 +8,22 @@ print(dataframe)
 # We find  customers with similar x-tics, narrow to clusters
 subset = dataframe[['FlightMiles','FlightTrans','DaysSinceEnroll']]
 print(subset)
+
+# step 1: create your features
+array = subset.values
+X  = array[:, 0:3]  # theres a munus 1
+# No Y/Outcome.
+# step 2: Bring the training models
+from sklearn.cluster import KMeans
+model = KMeans(random_state=42, n_clusters=8)
+model.fit(X)
+print('Model clustering....Done!')
+
+
+
+
+
+
+
+
+
