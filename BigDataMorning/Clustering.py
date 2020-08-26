@@ -15,8 +15,14 @@ X = array[:, 0:3]  # Means upto 2
 # No outcome Y
 
 from sklearn.cluster import KMeans
-model = KMeans(n_clusters=3)
+model = KMeans(n_clusters=5)
 model.fit(X)  # we fit the X
-print('Model creating clusters....')
+print('Model creating clusters....Done!')
 
+# get the center means
+centronoids = model.cluster_centers_
 
+clusters = pandas.DataFrame(centronoids,
+                            columns=['FlightMiles','FlightTrans','DaysSinceEnroll'])
+
+print(clusters)
