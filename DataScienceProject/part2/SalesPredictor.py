@@ -37,7 +37,6 @@ print('MSE', mean_squared_error(Y_test, predictions)) # its squared, get sqrt
 # MSE =  3.79679723671522  sqrt  - 1.8 + 1.8
 
 
-
 import pickle
 # save the model to disk
 filename = 'brain.sav'
@@ -51,5 +50,18 @@ loaded_model = pickle.load(open(filename, 'rb'))
 
 predicted = loaded_model.predict([[0,800,0]])
 print('You will sell ', predicted, 'Units')
+
+
+import matplotlib.pyplot as plt
+x,y = plt.subplots()
+y.scatter(Y_test, predictions)
+y.plot(Y_test, Y_test)
+plt.xlabel('Real Sales')
+plt.ylabel('Model Sales Predictions')
+plt.savefig('fig1.png')
+
+
+
+
 
 
