@@ -18,3 +18,14 @@ clusters= pandas.DataFrame(centronoids,
                            columns=['FlightMiles','FlightTrans','DaysSinceEnroll'])
 
 print(clusters)
+
+
+# How to get the records in this cluster
+dataframe['label']  = model.labels_
+dataframe  = dataframe[dataframe['label'] == 5]
+
+# above dataframe is filtered to cluster 5
+import xlwt
+dataframe.to_excel('cluster5.xls',
+                   columns=['FlightMiles','FlightTrans','DaysSinceEnroll'])
+
