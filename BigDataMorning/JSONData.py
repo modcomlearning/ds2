@@ -1,13 +1,14 @@
 
-import pandas
-dataframe = pandas.read_json("https://jsonplaceholder.typicode.com/users")
-print(dataframe)
+from nltk.tokenize import sent_tokenize
+import nltk
+nltk.download('punkt')
+text="""Hello Mr. Smith, how are you doing today? The weather is great, and city is awesome.
+The sky is pinkish-blue. You shouldn't eat cardboard"""
+tokenized_text=sent_tokenize(text)
+print(tokenized_text)
 
-print(dataframe.shape)
-print(dataframe['address'])
-print(dataframe['address'])
-print(dataframe['id'])
 
-df = dataframe['address'].join(dataframe['id'])
-print(df)
+
+
+
 

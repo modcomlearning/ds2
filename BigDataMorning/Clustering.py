@@ -4,7 +4,7 @@
 import pandas
 
 dataframe = pandas.read_csv("https://modcom.co.ke/bigdata/datasets/AirlinesCluster.csv")
-print(dataframe)
+print(type(dataframe))
 
 # Step 1:
 subset = dataframe[['FlightMiles','FlightTrans','DaysSinceEnroll']]

@@ -10,6 +10,9 @@ with open(filename) as fn:
         ln = fn.readline()
         lncnt += 1
 
+
+
+
 from collections import Counter
 with open(r'sample.txt') as f:
     p = Counter(f.read().split())
@@ -17,7 +20,9 @@ with open(r'sample.txt') as f:
 
 import pandas
 df = pandas.DataFrame.from_dict(p, orient='index').reset_index()
-print(df)
+print(df['index'])
+
+
 
 
 
