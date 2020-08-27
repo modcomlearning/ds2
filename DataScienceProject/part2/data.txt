@@ -1,0 +1,14 @@
+XML parsing in Python
+Last Updated: 16-07-2020
+This article focuses on how one can parse a given XML file and extract some useful data out of it in a structured way.
+
+XML: XML stands for eXtensible Markup Language. It was designed to store and transport data. It was designed to be both human- and machine-readable.That’s why, the design goals of XML emphasize simplicity, generality, and usability across the Internet.
+The XML file to be parsed in this tutorial is actually a RSS feed.
+
+RSS: RSS(Rich Site Summary, often called Really Simple Syndication) uses a family of standard web feed formats to publish frequently updated informationlike blog entries, news headlines, audio, video. RSS is XML formatted plain text.
+
+The RSS format itself is relatively easy to
+
+Easy to
+
+fhbkifnbfbgogffo

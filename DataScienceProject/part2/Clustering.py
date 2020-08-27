@@ -12,21 +12,19 @@ import matplotlib.pyplot as plt
 plt.figure(figsize=(10, 8))
 from sklearn.cluster import KMeans
 wcss = []
-for i in range(1, 20):
+for i in range(1, 50):
      kmeans = KMeans(n_clusters = i, init = 'k-means++', random_state = 42)
      kmeans.fit(X)
      wcss.append(kmeans.inertia_)
-plt.plot(range(1, 20), wcss)
+plt.plot(range(1, 50), wcss)
 plt.title('The Elbow Method')
 plt.xlabel('Number of clusters')
 plt.ylabel('WCSS')
 plt.savefig("fig2.png")
 
 
-
-
 from sklearn.cluster import KMeans
-model = KMeans(random_state=42, n_clusters=10)
+model = KMeans(random_state=42, n_clusters=14)
 model.fit(X)
 print('Model Clustering ....Done!')
 
