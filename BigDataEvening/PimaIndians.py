@@ -56,5 +56,5 @@ from sklearn.metrics import confusion_matrix
 print(confusion_matrix(Y_test, predictions))
 
 # Step 5: Use it, Deploy it, Optimize it.
-predicted = model.predict([[2,50,45,45,22,11,22,50]])
+predicted = model.predict([[2,2,45,180,22,11,22,180]])
 print(predicted)

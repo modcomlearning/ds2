@@ -16,3 +16,5 @@ from collections import Counter
 with open(r'data.txt') as f:
     p = Counter(f.read().split())
     print(p)
+
+
