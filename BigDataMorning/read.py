@@ -15,7 +15,9 @@ with open(r'sample.txt') as f:
     p = Counter(f.read().split())
     print(p)
 
-    
+import pandas
+df = pandas.DataFrame.from_dict(p, orient='index').reset_index()
+print(df)
 
 
 
