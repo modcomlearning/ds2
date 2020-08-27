@@ -29,11 +29,9 @@ print(clusters)
 
 # Step 4: get who is in these clusters, put them in excel worksheet, share them with ...
 subset['label']  = model.labels_
-subset = subset[subset['label'] == 3]
+subset = subset[subset['label'] == 6]
 
 import xlwt
-subset.to_excel("cluster3.xls", columns=['FlightMiles','FlightTrans','DaysSinceEnroll'])
+subset.to_csv("cluster6.csv", columns=['FlightMiles','FlightTrans','DaysSinceEnroll'])
 
-
-
-
+# 0729 225 710
