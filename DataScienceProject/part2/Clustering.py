@@ -22,10 +22,10 @@ print(clusters)
 
 # How to get the records in this cluster
 dataframe['label']  = model.labels_
-dataframe  = dataframe[dataframe['label'] == 5]
+dataframe  = dataframe[dataframe['label'] == 0]
 
 # above dataframe is filtered to cluster 5
 import xlwt
-dataframe.to_excel('cluster5.xls',
+dataframe.to_excel('cluster0.xls',
                    columns=['FlightMiles','FlightTrans','DaysSinceEnroll'])
 
