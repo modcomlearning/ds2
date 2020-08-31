@@ -6,7 +6,6 @@ print(dataframe)
 
 # Step 1: Split your datframe to features and outcome/label/target/output
 array = dataframe.values
-
 X = array[:, 0:4]   # upto the 3rd colm, always a -1  -Features
 Y = array[:, 4]     # outcome/output
 
@@ -46,5 +45,9 @@ from sklearn.metrics import confusion_matrix
 print(confusion_matrix(Y_test, predictions))
 
 # Step 5: Use it, Deploy it, Optimize it.
-predicted = model.predict([[3.6,2.6,5.2,0.8], [4.2,5.2,0.5,1.6],[5.2,3.5,1.2,2.8]])
+predicted = model.predict([[3.6,2.6,5.2,0.8],
+                           [4.2,5.2,0.5,1.6],
+                           [5.2,3.5,1.2,2.8],
+                           [9.9,5.9,7.7,8.9]])
+
 print(predicted)
