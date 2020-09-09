@@ -17,7 +17,7 @@ print(name)
 ages = [9,3,5,3,5,4,6,4,6,7,5,4,3,6,4,6,4,6,4,6,4,6.5]
 print(ages)
 
-kids_names = ['Ali','Ken','Mary','Ann','Joseph','Clare']
+kids_names = ['Ali','Ken','Mary','Ann','Joseph','Clare',7000]
 print(kids_names)
 
 # slicing
@@ -33,7 +33,15 @@ print(prizes)
 # slicing
 print('I got', points[1], 'Points, I took home a', prizes[2])
 
+# Difference between a list and a tuple
+# tuple is immutable/can't be updated at runtime
+# list is mutable/updated at runtime
+ages.append(11)
+kids_names.append('Irene')
+kids_names.remove('Ann')
 
+print(kids_names)
+print(ages)
 
 
 
