@@ -23,6 +23,15 @@ print(kids_names)
 # slicing
 print('The child name is ', kids_names[4], 'Her age is ', ages[8])
 
+# tuples  - store many values at once in one variable
+points = (5000,7000,5000,3000,5000,8000,9000.6)
+print(points)
+
+prizes = ('Phone','Tv Set','Camera')
+print(prizes)
+
+
+
 
 
 
