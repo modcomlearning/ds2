@@ -67,7 +67,6 @@ import matplotlib.pyplot as plt
 print(plt.style.available)
 plt.style.use('seaborn')
 
-
 from matplotlib import rcParams
 rcParams.update({'figure.autolayout': True})
 

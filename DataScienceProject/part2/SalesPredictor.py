@@ -13,8 +13,7 @@ Y = array[:, 4]  # 8th counted here: outcome
 from sklearn import model_selection
 X_train, X_test, Y_train, Y_test = model_selection.train_test_split(X,Y,
                                                                 test_size=0.30,
-                                                                random_state=42)
-
+# Watson Studio                                                                random_state=42)
 # Step 3: bring in the models
 from sklearn.linear_model import LinearRegression
 from sklearn.tree import DecisionTreeRegressor
