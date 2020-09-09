@@ -30,6 +30,8 @@ print(points)
 prizes = ('Phone','Tv Set','Camera')
 print(prizes)
 
+# slicing
+print('I got', points[1], 'Points, I took home a', prizes[2])
 
 
 
