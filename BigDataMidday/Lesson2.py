@@ -17,9 +17,16 @@ print('Your Interest ', interest, 'KES')
 
 formatted_float = "{:.3f}".format(interest)
 print(formatted_float)
+# Comparison Operators, constrol statements
+if time <= 12:
+    print('You will get 5% relief')  # works if its true
 
+elif time <=24:
+    print('You will get 10% relief')
 
-
+elif time <=48:
+    print('You will get 15% relief')
+    
 
 
 
