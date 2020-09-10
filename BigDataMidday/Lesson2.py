@@ -35,7 +35,17 @@ else:
     print('No relief') # 48 months and above
 
 
+# membership operators
+names = ['John','Ann','Joseph']
+if 'Joseph' in names:
+    print('Hey Joseph')
 
+# identity
+x = 8
+y = 6
+
+if x is y:
+    print('Yeees')
 
 
 
