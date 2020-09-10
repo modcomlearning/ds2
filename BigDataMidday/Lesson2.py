@@ -6,7 +6,7 @@
 # Operators: Membership: in , not in
 # Operators: Identity:  is , is not
 
-time = 24
+time = 56
 principle = 60000
 rate = 1.5
 name = 'Kelvin'
@@ -26,8 +26,9 @@ elif time <=24:
 
 elif time <=48:
     print('You will get 15% relief')
-    
 
+else:
+    print('No relief') # 48 months and above
 
 
 
