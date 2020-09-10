@@ -17,7 +17,7 @@ print(name)
 ages = [9,3,5,3,5,4,6,4,6,7,5,4,3,6,4,6,4,6,4,6,4,6.5]
 print(ages)
 
-kids_names = ['Ali','Ken','Mary','Ann','Joseph','Clare',7000]
+kids_names = ['Ali','Ken','Mary','Ann','Joseph','Clare']
 print(kids_names)
 
 # slicing
@@ -31,7 +31,7 @@ prizes = ('Phone','Tv Set','Camera')
 print(prizes)
 
 # slicing
-print('I got', points[1], 'Points, I took home a', prizes[2])
+print('I got', points[1], 'Points, I took home a',  prizes[2])
 
 # Difference between a list and a tuple
 # tuple is immutable/can't be updated at runtime
@@ -43,7 +43,9 @@ kids_names.remove('Ann')
 print(kids_names)
 print(ages)
 
-
+# lets confirm the datatypes of variables
+print(type(points))
+# dictionary
 
 
 
