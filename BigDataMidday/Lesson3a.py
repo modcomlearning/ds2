@@ -20,15 +20,16 @@ convert_cel_far()
 
 # convert kes to usd, euro, yen,       - 3 mins
 # introduce parameters, params
-def convert(kes): # we don't know the value of kes
+def convert(kes, name): # we don't know the value of kes
     #kes = 1000
     usd = kes/108
     print(kes, 'KES = ', usd, 'USD')
+    print('Your name provided was ', name)
 
 # convert used below
-convert(kes=500) # provide the argument to fit the paramter
-convert(kes=1000)
-convert(kes=1500)
+convert(kes=500, name='Joe') # provide the argument to fit the paramter
+convert(kes=1000, name='Ann')
+convert(kes=1500, name='Greg')
 
 
 
