@@ -18,5 +18,21 @@ def convert_cel_far():
 # trigger your function/call/used
 convert_cel_far()
 
+# convert kes to usd, euro, yen,       - 3 mins
+def convert():
+    kes = 1000
+    usd = kes/108
+    print(kes, 'KES = ', usd, 'USD')
+
+convert()
+
+
+
+
+
+
+
+
+
 
 
