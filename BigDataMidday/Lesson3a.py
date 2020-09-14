@@ -11,6 +11,12 @@ def convert_cel_far():
     celsius = 5
     fahrenheit = celsius*9/5 + 32
     print(celsius, 'C  is equal to ', fahrenheit, 'F')
+    if fahrenheit is 50:
+        print('Thats okay')
+    else:
+        print('Thats not okay')
+# trigger your function/call/used
+convert_cel_far()
 
 
 
