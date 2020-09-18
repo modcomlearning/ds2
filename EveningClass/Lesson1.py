@@ -21,6 +21,8 @@ print(weight[9])
 teams = ('Man U','Chelsea','Arsenal','Man city','Liverpool')
 scores = (2,6,5,3)
 
+print('I support ' , teams[3],' Because it scored ', teams[1], scores[0], '-', scores[3])
+
 
 
 
