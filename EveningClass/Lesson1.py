@@ -6,12 +6,28 @@ print(10000)
 
 age =  34  # int
 marks = 78.5  # float
-town = 'Joseph'
+town = 'Joseph' # string
 
 print(age)
 print(marks)
 print(town)
 # think of variables as containers that hold values
+
+# tuple - store many values in a single weight variable
+weight = (20.5,30,25.9,23,21,15,14,10,12,10.5,78,45,66,44,22,44,55,44,55,98)
+print(weight)
+print(weight[9])
+
+
+
+
+
+
+
+
+
+
+
 
 
 
