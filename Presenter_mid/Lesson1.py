@@ -13,6 +13,14 @@ print(height)
 print(age)
 print(marks)
 
+name = 'Joseph Modcom' # string
+print(name)
+
+
+
+
+
+
 
 
 
