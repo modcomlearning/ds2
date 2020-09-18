@@ -21,7 +21,12 @@ print(weight[9])
 teams = ('Man U','Chelsea','Arsenal','Man city','Liverpool')
 scores = (2,6,5,3)
 
-print('I support ' , teams[3],' Because it scored ', teams[1], scores[0], '-', scores[3])
+print('I support',teams[4], 'Because it scored', teams[2], scores[2],  '-', scores[3])
+
+# lists
+counties =['Embu','Kisumu','Nairobi','Nandi','Kajiado','Nyeri','Mombasa','Nakuru',
+           'Bomet']
+print(' I come from ', counties[7])
 
 
 
