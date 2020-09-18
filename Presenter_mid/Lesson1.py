@@ -16,6 +16,10 @@ print(marks)
 name = 'Joseph Modcom' # string
 print(name)
 
+# tuple store may values in one variable
+points = (78,78,55,66,22,77,88,55,11,22,55,66,78,99,78.9,'Ann')
+print(points)
+
 
 
 
