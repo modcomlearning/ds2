@@ -33,8 +33,14 @@ print(counties[2:5])
 teams = ['Man U','Chelsea','Liverpool','Man City']
 scores = [2,5,5,2,2,3]
 print('I support', teams[2], 'Because they scored ', teams[1], scores[1],' Goals')
+print(teams[0:2]) # slicing a list
 
-
+# Lists vs tuples in terms functionality
+# Lists are mutable(updated)
+# tuples are immutable(cannot be updated)
+teams.append('PSG')
+teams.remove('Liverpool')
+print(teams)
 
 
 
