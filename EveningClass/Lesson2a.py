@@ -23,10 +23,12 @@ def body_mass_index():
 
     elif bmi >= 18.5 and bmi <= 24.9:
         print('Normal')
-        
 
+    elif  bmi > 24.9 and bmi <= 29.9:
+        print('Overweight')
 
-
+    else:
+        print('Very Overweight')
 
 
 body_mass_index()
