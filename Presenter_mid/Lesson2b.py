@@ -16,6 +16,7 @@ def simple_interest():
     print('Your SImple Interest is ', answer)
 
 
+
 simple_interest()  # a function call/run/invoke
 
 def body_mass_index():
@@ -46,6 +47,5 @@ def body_mass_index():
 
 
 body_mass_index()
-
 
 

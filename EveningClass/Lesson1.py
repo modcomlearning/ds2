@@ -20,7 +20,6 @@ print(weight[9])
 
 teams = ('Man U','Chelsea','Arsenal','Man city','Liverpool')
 scores = (2,6,5,3)
-
 print('I support',teams[4], 'Because it scored', teams[2], scores[2],  '-', scores[3])
 
 # lists
