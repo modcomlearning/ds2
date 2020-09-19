@@ -5,8 +5,10 @@ def simple_interest():
     principle = 7000
     rate = 2.5
     time = 24
-    answer = principle * rate * time
+    answer = (principle * rate * time)/100
     print('Your Simple interest is: ', answer)
 
+
+simple_interest()
 
 
