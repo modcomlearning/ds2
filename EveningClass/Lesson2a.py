@@ -19,7 +19,12 @@ def body_mass_index():
     # Comparison operators: >, >=, <, <=, ==, !=(Not equal to)
     # Logical operators: and, or, not
     if bmi < 18.5:
+        print('Underweight')
+
+    elif bmi >= 18.5 and bmi <= 24.9:
+        print('Normal')
         
+
 
 
 
