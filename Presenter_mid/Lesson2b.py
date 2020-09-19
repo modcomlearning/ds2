@@ -18,7 +18,14 @@ def simple_interest():
 
 simple_interest()  # a function call/run/invoke
 
+def body_mass_index():
+    height = 1.6
+    weight = 75.5
+    bmi = weight/(height*height) * 703
+    print('Your BMI is ', bmi)
 
+
+body_mass_index()
 
 
 
