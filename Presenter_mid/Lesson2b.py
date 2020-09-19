@@ -15,7 +15,10 @@ def simple_interest():
     answer = (principle * rate * time)/100
     print('Your SImple Interest is ', answer)
 
-    
+
+simple_interest()  # a function call/run/invoke
+
+
 
 
 
