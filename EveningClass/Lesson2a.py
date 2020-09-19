@@ -16,10 +16,15 @@ def body_mass_index():
 
     bmi = weight/(height*height)
     print('Your Body Mass Index is ', bmi)
+    # Comparison operators: >, >=, <, <=, ==, !=(Not equal to)
+    # Logical operators: and, or, not
+    if bmi < 18.5:
+        
 
 
 
 
+body_mass_index()
 
 
 
