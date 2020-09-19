@@ -29,6 +29,8 @@ def body_mass_index():
     # use if, if else, elif
     if bmi < 18.5:
         print('Underweight')
+        answer = bmi/89
+        print(answer)
 
     elif bmi >= 18.5 and bmi <= 24.9:
         print('Normal')
