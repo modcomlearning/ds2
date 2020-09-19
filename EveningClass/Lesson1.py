@@ -6,7 +6,7 @@ print(10000)
 
 age =  34  # int
 marks = 78.5  # float
-town = 'Joseph' # string
+town = 'Thika' # string
 
 print(age)
 print(marks)
@@ -24,9 +24,8 @@ scores = (2,6,5,3)
 print('I support',teams[4], 'Because it scored', teams[2], scores[2],  '-', scores[3])
 
 # lists
-counties =['Embu','Kisumu','Nairobi','Nandi','Kajiado','Nyeri','Mombasa','Nakuru',
-           'Bomet']
-print(' I come from ', counties[7])
+counties =['Embu','Kisumu','Nairobi','Nandi']
+print('I come from ', counties[7])
 
 
 
