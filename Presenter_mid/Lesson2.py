@@ -7,4 +7,10 @@ vehicles = {'Toyota':500000,
 
 print(vehicles)
 print(vehicles['Honda'])
+print(vehicles['BMW'])
 
+
+person = {'john':40,
+          'peter':45}
+
+print(person['susan'])
