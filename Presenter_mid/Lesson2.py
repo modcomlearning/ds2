@@ -13,4 +13,7 @@ print(vehicles['BMW'])
 person = {'john':40,
           'peter':45}
 
-print(person['susan'])
+# print(person['susan'])
+print(person)
+del person['john']
+print(person)
